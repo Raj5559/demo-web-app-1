@@ -11,9 +11,14 @@ spring:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
   datasource:
-    url: 
-    username: 
-    password:
+    url: jdbc:postgresql://postgresql-service:5432/employeedb
+    username: postgres
+    password: test1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     
  
 
